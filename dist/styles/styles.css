@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+body {
+    width: 100%;
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-size: auto;
+    background-position: center;
+    position: relative;
+    user-select: none;
+}
+
+header {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 1.5;
+    font-family: 'Girassol', cursive;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header-options {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-option {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header-option:hover {
+    color: white;
+}
+
+#content {
+    margin-top: 4rem;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Girassol', cursive;
+    text-align: center;
+    text-shadow: -4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+    margin: 5rem 0;
+    max-width: 20rem;
+    height: auto;
+    min-height: 100% !important;
+}
+
+img {
+    height: 100% !important;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    color: rgba(255, 255, 255, 0.7);
+    box-shadow: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    line-height: 2;
+    text-align: center;
+}
+
+i:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+    body {
+        background-size: cover;
+    }
+    .header-options {
+        flex-direction: row;
+        height: 5rem;
+    }
+    .menu {
+        max-width: 40rem;
+        margin: 3rem 0 1rem;
+    }
+    footer {
+        font-size: 150%;
+    }
+}
