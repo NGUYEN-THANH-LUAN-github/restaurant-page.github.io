@@ -9,25 +9,33 @@ body {
     user-select: none;
 }
 
+header,
+.header-options,
+#content {
+    display: flex;
+    align-items: center;
+}
+
 header {
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(0, 0, 0, 0.8);
-    line-height: 1.5;
+    line-height: 2;
     font-family: 'Girassol', cursive;
     z-index: 1;
     position: fixed;
     top: 0;
     width: 100%;
+    flex-direction: column;
 }
 
 .header-options {
-    display: flex;
+    width: 100%;
+    height: 100%;
     justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
 }
 
 .header-option {
+    cursor: pointer;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -37,12 +45,11 @@ header {
 }
 
 #content {
-    margin-top: 4rem;
     color: white;
+    height: auto;
+    margin-top: 4rem;
     font-weight: 900;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 h1 {
@@ -52,7 +59,7 @@ h1 {
 }
 
 .menu {
-    margin: 5rem 0;
+    margin: 9rem 0 2rem;
     max-width: 20rem;
     height: auto;
     min-height: 100% !important;
@@ -62,11 +69,30 @@ img {
     height: 100% !important;
 }
 
+.contact-content {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    margin-bottom: 2rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.google-map {
+    height: 25rem;
+}
+
 footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     display: flex;
     color: rgba(255, 255, 255, 0.7);
-    box-shadow: black;
     background-color: rgba(0, 0, 0, 0.4);
     justify-content: center;
     line-height: 2;
@@ -81,15 +107,31 @@ i:hover {
     body {
         background-size: cover;
     }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .header-options {
         flex-direction: row;
         height: 5rem;
     }
     .menu {
         max-width: 40rem;
-        margin: 3rem 0 1rem;
     }
     footer {
         font-size: 150%;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-content {
+        flex-direction: row;
+        margin-top: 14rem;
+    }
+    .info {
+        margin-bottom: 0;
+    }
+    .google-map {
+        height: auto;
     }
 }
