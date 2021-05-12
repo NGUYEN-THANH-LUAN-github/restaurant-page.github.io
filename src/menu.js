@@ -1,8 +1,11 @@
 const loadMenu = (content) => {
-    document.querySelector('[data-menu]').style.cssText = "text-decoration: 1px underline; text-underline-offset: 4px;"
+    document.querySelector('[data-menu]').style.cssText = "text-decoration: 1px underline; text-underline-offset: 4px;color:white;"
 
-    content.innerHTML = "";
-    content.innerHTML += `
+    document.querySelector('footer').style.setProperty('position', 'relative');
+    content.style.cssText = "height:auto"
+
+    // content.innerHTML = "";
+    content.innerHTML = `
     <div class="menu gx-5"> 
         <div class = "row" id = "menu-content"></div> 
     </div > `
@@ -22,12 +25,6 @@ const loadMenu = (content) => {
             </div>
         </div>`
     }
-
-    content.style.removeProperty('height')
-    const footer = document.querySelector('footer')
-    footer.style.cssText = 'position: relative;'
-    footer.removeProperty('bottom')
-
 }
 
 export { loadMenu }
