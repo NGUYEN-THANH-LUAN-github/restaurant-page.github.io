@@ -7,15 +7,15 @@ const loadMenu = (content) => {
     // content.innerHTML = "";
     content.innerHTML = `
     <div class="menu gx-5"> 
-        <div class = "row" id = "menu-content"></div> 
+        <div class="row" id="menu-content"></div> 
     </div > `
 
     const menu = content.querySelector('#menu-content')
     for (let i = 1; i <= 8; i++) {
         menu.innerHTML += `
         <div class="col-md-6">
-            <div class="card mb-3 bg-dark">
-                <div class="container mt-3" style="height: 12rem">
+            <div class="card mb-3" style="background-color:rgba(0, 0, 0, 0.8); z-index:-1">
+                <div class="container mt-3" style="height: 12rem; z-index:1">
                     <img src="./images/menu/${i}.jpg" class="card-img-top">
                 </div>
                 <div class="card-body text-center">

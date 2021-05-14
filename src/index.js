@@ -16,6 +16,11 @@ window.addEventListener('DOMContentLoaded', () => {
     loadHomeContent(content)
 });
 
+document.querySelector('[data-logo]').addEventListener('click', (e) => {
+    e.preventDefault();
+    loadHomeContent(content)
+});
+
 document.querySelector('[data-home]').addEventListener('click', (e) => {
     e.preventDefault();
     loadHomeContent(content)

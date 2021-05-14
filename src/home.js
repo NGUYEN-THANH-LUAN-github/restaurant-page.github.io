@@ -5,7 +5,11 @@ const loadHomeContent = (content) => {
     content.style.cssText = "height:85vh"
 
     // content.innerHTML = "";
-    content.innerHTML = '<div><h1 class="display-1">A Night In Paris</h1></div>'
+    content.innerHTML = `
+        <div class="d-flex flex-column text-center homepage justify-content-center">
+            <h1>A Night In Paris</h1>
+            <p class="caption">giving you the best of times</p>
+        </div>`
 }
 
 export { loadHomeContent }

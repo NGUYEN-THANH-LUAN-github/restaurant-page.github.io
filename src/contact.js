@@ -4,7 +4,7 @@ const loadContact = (content) => {
     document.querySelector('footer').style.setProperty('position', 'fixed');
 
     content.innerHTML = `
-        <div class="container contact-content p-4 rounded" style="width:70%; height:auto; background-color: rgba(0, 0, 0, 0.527);">
+        <div class="container contact-content p-4 rounded" style="width:70%; height:auto; background-color: rgba(0, 0, 0, 0.5);">
             <div class="container info">
                 <div class="fs-5">
                     <p><i class="fas fa-map-marker-alt"></i> 〒811-1101 福岡県福岡市早良区重留１丁目８−20</p>
