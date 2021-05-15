@@ -151,3 +151,9 @@ i:hover {
         height: auto;
     }
 }
+
+@media (max-height: 900px) {
+    footer {
+        visibility: hidden;
+    }
+}
