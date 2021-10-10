@@ -1,4 +1,4 @@
-# 🌱 restaurant-page
+# 🌱 Mellandi Caravan - a restaurant website
 
 a project from The Odin Project
 
